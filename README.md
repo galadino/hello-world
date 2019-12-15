@@ -30,4 +30,17 @@ Total 3 (delta 0), reused 0 (delta 0)
 To github.com:galadino/hello-world.git
    888e971..12b9b67  master -> master
 ```
-Now try to refresh the web page.
+Now try to refresh the web page. You can see all edits done. Let's say that we are satisfied by this version and we want to begin to work on a new feature.
+Let's start a new branch
+```
+$ git branch my_feature
+```
+Let's switch to the new branch
+```
+$ git checkout my_feature
+Switched to branch 'my_feature'
+```
+We make some work and when we are satisfied we commit it
+```
+$ git add --all
+$ git commit -m "working on my_feature"
