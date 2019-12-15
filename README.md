@@ -58,4 +58,22 @@ And then push my_feature to github
 ```
 git push origin my_feature
 ```
-
+Now suppose you are finished with my_feature and you want to delete it. Keep in mind that It's absolutely amazing at how difficult Git makes simple tasks..
+You first delete the local branch
+```
+$ git branch -d my_feature
+```
+If you get
+```
+error: The branch 'my_feature' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D my_feature'.
+```
+and you are sure that you merged fine, then
+```
+$ git branch -D my_feature
+Deleted branch my_feature (was 79df7b5).
+```
+Then delete the branch on the repository
+```
+git push origin :my_feature
+```
