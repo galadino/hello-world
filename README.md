@@ -44,3 +44,6 @@ We make some work and when we are satisfied we commit it
 ```
 $ git add --all
 $ git commit -m "working on my_feature"
+[my_feature 851ff4c] working on my_feature
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+```
